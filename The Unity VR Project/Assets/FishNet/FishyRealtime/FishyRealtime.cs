@@ -711,7 +711,7 @@ namespace FishyRealtime
                 name = currRoom.Name,
                 isPublic = currRoom.IsVisible,
                 open = currRoom.IsOpen,
-                maxPlayers = currRoom.MaxPlayers,
+                maxPlayers = (byte)currRoom.MaxPlayers,
                 playerCount = currRoom.PlayerCount
 
             };
@@ -746,7 +746,7 @@ namespace FishyRealtime
                     name = entry.Value.Name,
                     isPublic = entry.Value.IsVisible,
                     open = entry.Value.IsOpen,
-                    maxPlayers = entry.Value.MaxPlayers,
+                    maxPlayers = (byte)entry.Value.MaxPlayers,
                     playerCount = entry.Value.PlayerCount
                 };
                 i++;
@@ -773,7 +773,7 @@ namespace FishyRealtime
                     name = entry.Value.Name,
                     isPublic = entry.Value.IsVisible,
                     open = entry.Value.IsOpen,
-                    maxPlayers = entry.Value.MaxPlayers,
+                    maxPlayers = (byte)entry.Value.MaxPlayers,
                     playerCount = entry.Value.PlayerCount
                 };
                 rooms.Add(room);

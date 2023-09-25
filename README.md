@@ -1,10 +1,10 @@
 # Team (H)eadspace
 
 ## Team Members
-__Ryan Giles__ : Project Manager & Developer
-__Matthew Patterson__: Designer & Developer
-__Zarchary Williams__: Developer
-__Stephen Lefkowitz__: Designer
+- __Ryan Giles__ : Project Manager & Developer
+- __Matthew Patterson__: Designer & Developer
+- __Zarchary Williams__: Developer
+- __Stephen Lefkowitz__: Designer
 
 ## Mission Statement
 Our goal is to find a solution to supporting learning in augmented and virtual reality. Students often find the current style of class teaching boring and do not retain the information given for very long. Part of this is due to the information being given in a clinical information dump, rather than a more interactive and engaging method of teaching. We aim to correct this by creating an interactive, spatial VR environment which teaches various concepts and facts using a holistic, hands-on approach.

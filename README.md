@@ -40,7 +40,7 @@ We believe that students between the ages of 12-19 struggle the most with findin
 - Team Members should clone this GitHub repository onto their personal machines using their @maine.edu emails (I believe you can't access this page without using your student email currently, so that shouldn't be much of a problem!). Make sure the repository is cloned into an easily accessible location.
 
 ### Task Board
-- We will be using JetBrain's YouTrack agile task board to track our User Stories and Tasks for this project. Team Members will be invited as collaborators by the Project Manager.
+- We will be using GitHub's built in Agile and Gantt Board system. Select the "Projects" tab at the top of this page, and select "Team-H: The Unity VR Project" to view the task board.
 
 ### Engine Set-up
 - We are using Unity Engine to develop this project. First, team members should install Unity Hub from the Unity website. *(https://unity.com/unity-hub)*

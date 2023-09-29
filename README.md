@@ -3,7 +3,7 @@
 ## Team (H)eadspace - Members
 - __Ryan Giles__ : Project Manager & Developer
 - __Matthew Patterson__: Designer & Developer
-- __Zarchary Williams__: Developer
+- __Zachary Williams__: Developer
 - __Stephen Lefkowitz__: Designer
 
 ## Problem Statement

@@ -59,6 +59,7 @@ We believe that students between the ages of 12-19 struggle the most with findin
 
 ### Important Project Links
 - This page! :) *(https://github.com/COS420-Fall23/Team-H)*
-- Google Drive *(https://drive.google.com/drive/u/0/folders/1zem8AmQk_qwXTh39h2W_79kATS2VG2KQ)*
-- Google Calendar *(https://calendar.google.com/calendar/embed?src=c_c9da18c558eecab7a4f77609aadce948d9fd8bf27a92fa447b474e3ccb1b1a6e%40group.calendar.google.com&ctz=America%2FNew_York)*
+- Google Drive *(https://drive.google.com/drive/u/0/folders/1Fd2qGNTOkj5mIHq-vbb6TkCY4el1FhbU)*
+- Google Calendar
+    - *(https://calendar.google.com/calendar/embed?src=c_c9da18c558eecab7a4f77609aadce948d9fd8bf27a92fa447b474e3ccb1b1a6e%40group.calendar.google.com&ctz=America%2FNew_York)*
 - MIRO Board *(https://miro.com/app/board/uXjVMhlECP4=/?share_link_id=844115213346)*

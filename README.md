@@ -3,7 +3,7 @@
 ## Team (H)eadspace - Members
 - __Ryan Giles__ : Project Manager & Developer
 - __Matthew Patterson__: Designer & Developer
-- __Zarchary Williams__: Developer
+- __Zachary Williams__: Developer
 - __Stephen Lefkowitz__: Designer
 
 ## Problem Statement
@@ -40,7 +40,7 @@ We believe that students between the ages of 12-19 struggle the most with findin
 - Team Members should clone this GitHub repository onto their personal machines using their @maine.edu emails (I believe you can't access this page without using your student email currently, so that shouldn't be much of a problem!). Make sure the repository is cloned into an easily accessible location.
 
 ### Task Board
-- We will be using JetBrain's YouTrack agile task board to track our User Stories and Tasks for this project. Team Members will be invited as collaborators by the Project Manager.
+- We will be using GitHub's built in Agile and Gantt Board system. Select the "Projects" tab at the top of this page, and select "Team-H: The Unity VR Project" to view the task board.
 
 ### Engine Set-up
 - We are using Unity Engine to develop this project. First, team members should install Unity Hub from the Unity website. *(https://unity.com/unity-hub)*
@@ -56,3 +56,10 @@ We believe that students between the ages of 12-19 struggle the most with findin
     - Unity Hub will automatically open the project using the installed editor version.
     - __Note: Do not attempt to open the project using a different version of the Unity Editor!__ This will cause unwanted errors as settings, features, and script language is handled differently version to version.
 
+
+### Important Project Links
+- This page! :) *(https://github.com/COS420-Fall23/Team-H)*
+- Google Drive *(https://drive.google.com/drive/u/0/folders/1Fd2qGNTOkj5mIHq-vbb6TkCY4el1FhbU)*
+- Google Calendar
+    - *(https://calendar.google.com/calendar/embed?src=c_c9da18c558eecab7a4f77609aadce948d9fd8bf27a92fa447b474e3ccb1b1a6e%40group.calendar.google.com&ctz=America%2FNew_York)*
+- MIRO Board *(https://miro.com/app/board/uXjVMhlECP4=/?share_link_id=844115213346)*

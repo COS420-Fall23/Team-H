@@ -1,0 +1,45 @@
+{
+    "name": "LatticeMarker",
+    "maps": [
+        {
+            "name": "PressA",
+            "id": "2e74a6ee-7db2-4e5e-a94b-3f7a0b788d23",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "ea438997-d142-4d25-93f8-1b0d0501f0dd",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "3fd370db-1f25-4711-8fef-89d00afa1f00",
+                    "path": "<ValveIndexController>/primaryButton",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "dcc7750f-652b-4f93-9f53-73241eb6b4d5",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

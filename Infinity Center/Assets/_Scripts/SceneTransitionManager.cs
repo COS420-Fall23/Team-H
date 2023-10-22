@@ -26,13 +26,14 @@ public class SceneTransitionManager : MonoBehaviour
         SceneManager.LoadScene("GoldbergLab");
     }
 
-    public void LoadTeacherMenu()
+    public void LoadBasicTutorial()
     {
-        SceneManager.LoadScene("TeacherMenu");
+        SceneManager.LoadScene("BasicTutorial");
     }
 
-    public void LoadStudentMenu()
+    public void LoadInfinityCenter()
     {
-        SceneManager.LoadScene("StudentMenu");
+        SceneManager.LoadScene("InfinityCenter");
     }
+
 }

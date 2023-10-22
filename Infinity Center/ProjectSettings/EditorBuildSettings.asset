@@ -9,14 +9,11 @@ EditorBuildSettings:
     path: Assets/_Scenes/LogInScreen.unity
     guid: 9e8c01507b41ade4e9a5deb712f53143
   - enabled: 1
-    path: Assets/_Scenes/TheClassroom.unity
-    guid: ceb99eb4558bc594c9c3a013e538fa98
+    path: Assets/_Scenes/InfinityCenter.unity
+    guid: 97d6e8364d80fb44c9ce0fae6187dc54
   - enabled: 1
-    path: Assets/_Scenes/LatticeLand.unity
-    guid: 283510970f92f514d8990ecba4455f10
-  - enabled: 1
-    path: Assets/_Scenes/GoldbergLab.unity
-    guid: 7b8ad5df0076ca2419d6803b92f8397b
+    path: Assets/_Scenes/BasicTutorial.unity
+    guid: e50979d4c9d67ad439d830709c614cdf
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: af7ff06a4525a49408ec199a84ffca2e, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: d86effd805a7d504daaaec4889baa9fa, type: 2}

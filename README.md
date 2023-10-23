@@ -30,7 +30,7 @@ We believe that students between the ages of 12-19 struggle the most with findin
     - Syncrhonous Work Blocks, Monday/Wednesday @ 12:30-1pm (Flexible as needed by team members)
     - Sprint Stand Ups, Tuesday/Thursday @ 12pm. __*Team members are expected to respond to the Discord thread within 2-3 hours so the conversation can be started*__
     - Sprint Tie-Up & Retorspective, Friday @ 2-3pm
-- __*Meeting Agendas will be uploaded as a .pdf to the "Meeting Agendas & Logs" folder at least 24 hours before a meeting occurs*__
+- __*Meeting Agendas will be available in Google Drive at least 24 hours before the meeting.*__
 
 
 

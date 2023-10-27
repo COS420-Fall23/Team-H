@@ -6,6 +6,8 @@ TagManager:
   tags:
   - projectile
   - NoCollisionOnSame
+  - Bullet
+  - TaskItem
   layers:
   - Default
   - TransparentFX

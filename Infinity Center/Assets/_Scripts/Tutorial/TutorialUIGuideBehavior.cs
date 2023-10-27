@@ -1,17 +1,15 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using JetBrains.Annotations;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
+using System.Linq;
 using UnityEngine.UI;
 
 public class TutorialUIGuideBehavior : MonoBehaviour
 {
     #region | Core Variables |
 
-    // # Canvas Objects
+    // ## Canvas Objects
     [SerializeField] private GameObject _welcomeScreen;
     [SerializeField] private GameObject _curTaskScreen;
     [SerializeField] private TMP_Text _curTaskTopicTitle;
@@ -20,19 +18,16 @@ public class TutorialUIGuideBehavior : MonoBehaviour
     [SerializeField] private GameObject _btnsMovementType;
     [SerializeField] private GameObject _userSettings; // This is a place holder. Need to find proper component to set movement type.
 
-    // Integers to track task completion.
+    // ## Integers to track task completion.
     private int _curTutorialProgressIndex = 0;
-    private int _curTaskIndex = 0;
     
-    // ## World Space Objects
-    [SerializeField] private GameObject _menuPositionsObj;
-    [SerializeField] private GameObject _taskHighlightersObj;
-    
+    // ## Events
+    public event Action activateNextTask;
 
     [Header("Debugging")] 
     [SerializeField] private bool _enableDebugLogs;
     [SerializeField] private Transform[] _menuTransforms;
-    [SerializeField] private TargetHighlighterBehavior[] _taskHighlighters;
+    
 
     #endregion
 
@@ -40,12 +35,6 @@ public class TutorialUIGuideBehavior : MonoBehaviour
 
     private void Awake()
     {
-        _menuTransforms = _menuPositionsObj.GetComponentsInChildren<Transform>();
-        _taskHighlighters = _taskHighlightersObj.GetComponentsInChildren<TargetHighlighterBehavior>();
-        foreach (var highlighter in _taskHighlighters)
-        {
-            highlighter.gameObject.SetActive(false);
-        }
         gameObject.transform.position = _menuTransforms[0].position;
         gameObject.SetActive(true);
         _welcomeScreen.SetActive(true);
@@ -95,7 +84,8 @@ public class TutorialUIGuideBehavior : MonoBehaviour
                 break;
             case 1: // 'Synced Movement' Task
                 _btnContinue.interactable = false;
-                _taskHighlighters[0].Activate();
+                if(_enableDebugLogs) Debug.Log("Invoking ActivateNextTask");
+                activateNextTask?.Invoke();
                 _curTaskTopicTitle.text = "Synchronized Movement";
                 _curTaskBodyText.text = "Synchronized Movement is when you are set to be sharing the physical space as well as your virtual space with others.\n" +
                                         "\nFor this to occur, there will be no controller based movements. Your only move as you do with your actual body.\n" +
@@ -103,7 +93,6 @@ public class TutorialUIGuideBehavior : MonoBehaviour
                 break;
             case 2: // 'Synced Movement' Complete
                 _btnContinue.interactable = true;
-                _taskHighlighters[0].Activate();
                 gameObject.transform.position = _menuTransforms[1].position;
                 _curTaskTopicTitle.text = "Synchronized Movement: Complete";
                 _curTaskBodyText.text = "Great job. The idea here, is to have a classroom set up with this use where you share the physical and virtual world together in real time.\n" + 
@@ -117,7 +106,7 @@ public class TutorialUIGuideBehavior : MonoBehaviour
                 break;
             case 4: // 'Smooth Move' Task
                 _btnContinue.interactable = false;
-                _taskHighlighters[0].gameObject.SetActive(true);
+                activateNextTask?.Invoke();
                 _curTaskTopicTitle.text = "Smooth Movement";
                 _curTaskBodyText.text = "The first mode of movement we will explore is 'Smooth Movement'. This is a simulated way of ";
                 break;
@@ -128,6 +117,7 @@ public class TutorialUIGuideBehavior : MonoBehaviour
                 break;
             case 6: // 'Teleport Movement' Task
                 _btnContinue.interactable = false;
+                activateNextTask?.Invoke();
                 _curTaskTopicTitle.text = "Teleportation";
                 _curTaskBodyText.text = "Introduce teleportation.";
                 break;

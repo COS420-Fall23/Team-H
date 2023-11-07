@@ -56,6 +56,10 @@ We believe that students between the ages of 12-19 struggle the most with findin
     - Unity Hub will automatically open the project using the installed editor version.
     - __Note: Do not attempt to open the project using a different version of the Unity Editor!__ This will cause unwanted errors as settings, features, and script language is handled differently version to version.
 
+### Project Build
+- Starting in Deliverable 4, a build will be pushed to the repository for the end of every Sprint. This is to demonstrate our progress in a compiled format as opposed to digging through the Unity Editor.
+- It should be noted that the build will likely be compiled for a VR rig, meaning a user without VR Hardware will be unable to use the build.
+- Because of this, the build is mostly for us to look at and say "Hey, we did that!" as encouragement. Also so we can see a completed product.
 
 ### Important Project Links
 - This page! :) *(https://github.com/COS420-Fall23/Team-H)*

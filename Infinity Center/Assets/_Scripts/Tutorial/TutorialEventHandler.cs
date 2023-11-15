@@ -1,7 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
+using HurricaneVR.Framework.Core.Player;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -49,6 +49,11 @@ public class TutorialEventHandler : MonoBehaviour
     [SerializeField] private TutorialUIGuideBehavior _tutorialUI;
     [SerializeField] private TaskHighlighterBehavior[] _highlighters;
     
+    [Header("Player Inputs")] [SerializeField]
+    private HVRPlayerController _playerController;
+    [SerializeField] private float _defaultMoveSpeed = 1.5f;
+    [SerializeField] private float _defaultRunSpeed = 3.5f;
+    
     
     [Header("Debugging")] 
     [SerializeField] private bool _enableDebugLogs;
@@ -69,13 +74,29 @@ public class TutorialEventHandler : MonoBehaviour
         _tutorialUI.activateNextTask += OnActivateNextTask;
     }
 
+    private void Start()
+    {
+        
+    }
+
     #endregion
 
     #region | Custom Methods |
 
+    private void OnPauseMovement()
+    {
+        if(_enableDebugLogs) Debug.Log("OnPauseMovement Invoked");
+        _playerController.MoveSpeed = 0;
+        _playerController.RunSpeed = 0;
+        _playerController.CanJump = false;
+        _playerController.CanCrouch = false;
+        
+    }
+
     private void OnEnterMarker(TaskHighlighterBehavior taskHighlighterBehavior, float particalDuration)
     {
         if(_enableDebugLogs) Debug.Log("OnEnterMarker Invoked");
+        
         StartCoroutine(taskHighlighterBehavior.CompleteObjective());
         _tutorialUI.UpdateTutorial();
     }

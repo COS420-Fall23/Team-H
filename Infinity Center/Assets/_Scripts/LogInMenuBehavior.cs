@@ -1,7 +1,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using HurricaneVR.Framework.Core.Player;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 
 public class LogInMenuBehavior : MonoBehaviour
@@ -13,6 +15,9 @@ public class LogInMenuBehavior : MonoBehaviour
     [SerializeField] private GameObject _rolePrompt;
     [SerializeField] private GameObject _mainMenu;
     [SerializeField] private GameObject _settingMenu;
+    [SerializeField] private GameObject _txtExhibitComingSoon;
+
+    [SerializeField] private HVRPlayerController _playerController;
 
     #endregion
 
@@ -24,6 +29,10 @@ public class LogInMenuBehavior : MonoBehaviour
         _rolePrompt.SetActive(false);
         _mainMenu.SetActive(false);
         _settingMenu.SetActive(false);
+        _txtExhibitComingSoon.SetActive(false);
+
+        _playerController.MoveSpeed = 0;
+        _playerController.RunSpeed = 0;
     }
 
     #endregion
@@ -68,6 +77,16 @@ public class LogInMenuBehavior : MonoBehaviour
             _settingMenu.SetActive(true);
             _mainMenu.SetActive(false);
         }
+    }
+
+    public void StartExhibit()
+    {
+        _txtExhibitComingSoon.SetActive(true);
+    }
+
+    public void StartTutorial()
+    {
+        SceneManager.LoadScene("BasicTutorial");
     }
 
     #endregion

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8223373074354762654}
   - component: {fileID: 4508442590228110690}
   - component: {fileID: 2310123288316957432}
-  m_Layer: 0
+  m_Layer: 22
   m_Name: FX_Direction_Arrows_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4878,7 +4878,7 @@ GameObject:
   - component: {fileID: 3155679335657522353}
   - component: {fileID: 378400326753228809}
   - component: {fileID: 5868370507419465905}
-  m_Layer: 0
+  m_Layer: 22
   m_Name: FX_Direction_Arrows_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9744,7 +9744,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2330918292891043206}
   - component: {fileID: 1845138965914902355}
-  m_Layer: 0
+  m_Layer: 22
   m_Name: SM_LightRay_Round
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9833,7 +9833,7 @@ GameObject:
   - component: {fileID: 3364214537928615029}
   - component: {fileID: 8587488682039445695}
   - component: {fileID: 1946244640576716585}
-  m_Layer: 0
+  m_Layer: 22
   m_Name: PFX_CompletionConfetti
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14748,7 +14748,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1775994312879103725}
-  m_Layer: 0
+  m_Layer: 22
   m_Name: Null
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14779,7 +14779,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6424782811251774913}
-  m_Layer: 0
+  m_Layer: 22
   m_Name: Light_Shaft_Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14813,7 +14813,7 @@ GameObject:
   - component: {fileID: 4775842920657662147}
   - component: {fileID: 7635188912890825229}
   - component: {fileID: 8861263791468307660}
-  m_Layer: 0
+  m_Layer: 22
   m_Name: FX_Confetti_Flash_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19727,7 +19727,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2443738079820954347}
-  m_Layer: 0
+  m_Layer: 22
   m_Name: FX_LightRayRound_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19763,7 +19763,7 @@ GameObject:
   - component: {fileID: 2079622193111790580}
   - component: {fileID: 7130686569707378167}
   - component: {fileID: 1339704092821177194}
-  m_Layer: 0
+  m_Layer: 22
   m_Name: TaskHighlighter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19805,8 +19805,6 @@ MonoBehaviour:
   _arrows: {fileID: 8649602007754515072}
   _lightRay: {fileID: 6359011722278910223}
   _floorRing: {fileID: 8508108268547200383}
-  _capsuleCollider: {fileID: 7130686569707378167}
-  _boxCollider: {fileID: 0}
   taskTargetType: 0
   _enableDebugLogs: 0
 --- !u!136 &7130686569707378167
@@ -19862,7 +19860,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1412821240318843457}
-  m_Layer: 0
+  m_Layer: 22
   m_Name: Light_Shaft_Manip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19896,7 +19894,7 @@ GameObject:
   - component: {fileID: 2695975043802786600}
   - component: {fileID: 6460390121100420848}
   - component: {fileID: 6018312167264911860}
-  m_Layer: 0
+  m_Layer: 22
   m_Name: SM_Icon_SelectionRing_07
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19979,7 +19977,7 @@ GameObject:
   - component: {fileID: 1436238316656960074}
   - component: {fileID: 99320826203458509}
   - component: {fileID: 249936486727755583}
-  m_Layer: 0
+  m_Layer: 22
   m_Name: FX_Direction_Arrows_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

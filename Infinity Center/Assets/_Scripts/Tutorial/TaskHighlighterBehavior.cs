@@ -18,11 +18,12 @@ public class TaskHighlighterBehavior : MonoBehaviour
     private BoxCollider _boxCollider;
     
     // ## Enum Target Type
-    private enum TaskTargetTypes{ Player, Item }
+    private enum TaskTargetTypes{ Player, TaskItem }
     [SerializeField] private TaskTargetTypes taskTargetType;
     private string curTaskTargetString;
     
     // ## Event
+    public bool _destroyTaskItemOnEnter = true;
     public event Action<TaskHighlighterBehavior, float> OnEnter;
     
     [Header("Debugging")] 
@@ -42,7 +43,7 @@ public class TaskHighlighterBehavior : MonoBehaviour
                 _capsuleCollider.enabled = true;
                 _boxCollider.enabled = false;
                 break;
-            case TaskTargetTypes.Item:
+            case TaskTargetTypes.TaskItem:
                 curTaskTargetString = "TaskItem";
                 _capsuleCollider.enabled = false;
                 _boxCollider.enabled = true;
@@ -58,8 +59,12 @@ public class TaskHighlighterBehavior : MonoBehaviour
             Debug.Log("Collide Tag: " + other.tag);
             Debug.Log("Event: " + OnEnter);
         }
-        
-        if (other.CompareTag(curTaskTargetString)) OnEnter?.Invoke(this, _completionConfetti.main.duration);
+
+        if (other.CompareTag(curTaskTargetString))
+        {
+            OnEnter?.Invoke(this, _completionConfetti.main.duration);
+            if (_destroyTaskItemOnEnter && taskTargetType == TaskTargetTypes.TaskItem) Destroy(other.gameObject);
+        } 
     }
 
     #endregion

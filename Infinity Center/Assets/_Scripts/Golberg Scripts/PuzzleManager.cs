@@ -1,29 +1,54 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PuzzleManager : MonoBehaviour
 {
-    public Transform[] PuzzleObjects;
+    [SerializeField] private PuzzleStatus puzzleStatus;
+    [SerializeField] private GameObject[] levelPrefabs; // Array of level prefabs
 
-    public PuzzleState SavePuzzleState()
+    private int currentLevelIndex = 0;
+    private GameObject currentLevelInstance;
+
+    private void Start()
     {
-        PuzzleObjectTransform[] transforms = new PuzzleObjectTransform[PuzzleObjects.Length];
-        for (int i = 0; i < PuzzleObjects.Length; i++)
+        LoadLevel(currentLevelIndex);
+    }
+
+    // Call this to load a specific level
+    public void LoadLevel(int levelIndex)
+    {
+        if (levelIndex < 0 || levelIndex >= levelPrefabs.Length)
         {
-            transforms[i] = PuzzleObjectTransform.FromTransform(PuzzleObjects[i]);
+            Debug.LogError("Level index out of range");
+            return;
         }
 
-        return new PuzzleState(transforms);
-    }
-        public void LoadPuzzleState(PuzzleState state)
-    {
-        for (int i = 0; i < state.ObjectTransforms.Length; i++)
+        // Destroy current level if it exists
+        if (currentLevelInstance != null)
         {
-            PuzzleObjects[i].position = state.ObjectTransforms[i].Position;
-            PuzzleObjects[i].rotation = state.ObjectTransforms[i].Rotation;
-            PuzzleObjects[i].localScale = state.ObjectTransforms[i].Scale;
+            Destroy(currentLevelInstance);
         }
+
+        // Instantiate the new level
+        currentLevelInstance = Instantiate(levelPrefabs[levelIndex]);
+        currentLevelIndex = levelIndex;
+
+        // Reset puzzle status for the new level
+        puzzleStatus.ResetPuzzleObjects();
+        puzzleStatus.SavePuzzleState();
     }
+
+    // Call this to load the next level
+    public void LoadNextLevel()
+    {
+        int nextLevelIndex = (currentLevelIndex + 1) % levelPrefabs.Length;
+        LoadLevel(nextLevelIndex);
+    }
+
+    // Call this to retry the current level
+    public void RetryCurrentLevel()
+    {
+        LoadLevel(currentLevelIndex);
+    }
+
+    // Implement methods to handle level completion, failures, etc.
 }
-

@@ -1,3 +1,4 @@
+/*
 using System;
 using UnityEngine;
 
@@ -35,3 +36,4 @@ public class puzzleStatus : MonoBehaviour
         Debug.Log("List cleared.");
     }
 }
+*/

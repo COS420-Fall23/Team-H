@@ -1,39 +1,49 @@
-// using UnityEngine;
-// using HVRPhysicsButton;
-// using HurricaneVR;
-// public class EnableRigidbodyOnButtonPress : MonoBehaviour
-// {
-//     // Reference to the HVRPhysicsButton component.
-//     [SerializeField]public HVRPhysicsButton button_top;
+using UnityEngine;
 
-//     // Reference to the Rigidbody you want to enable.
-//     [SerializeField]public Rigidbody targetRigidbody;
+public class PuzzleStart : MonoBehaviour
+{
+    [SerializeField] private Collider buttonCollider; // Assign the mesh collider of the button
+    private Rigidbody ballRigidbody; // The Rigidbody of the ball, found by tag
 
-//     private void Awake()
-//     {
-//         // Ensure the Rigidbody is not null.
-//         if (targetRigidbody == null)
-//         {
-//             targetRigidbody = GetComponent<Rigidbody>();
-//         }
+    private void Start()
+    {
+        // Find the ball using the tag and get its Rigidbody
+        GameObject ballObject = GameObject.FindGameObjectWithTag("ballTag");
+        if (ballObject != null)
+        {
+            ballRigidbody = ballObject.GetComponent<Rigidbody>();
+        }
+        else
+        {
+            Debug.LogError("Ball with tag 'ballTag' not found in the scene.");
+        }
 
-//         // Register the button down event.
-//         hvrPhysicsButton.ButtonDown.AddListener(HandleButtonDown);
-//     }
+        // Ensure the Rigidbody is initially disabled
+        if (ballRigidbody != null)
+        {
+            ballRigidbody.isKinematic = true;
+        }
+        else
+        {
+            Debug.LogError("Rigidbody not found on the ball object.");
+        }
+    }
 
-//     private void OnDestroy()
-//     {
-//         // Unregister the button down event to avoid memory leaks.
-//         hvrPhysicsButton.ButtonDown.RemoveListener(HandleButtonDown);
-//     }
+    private void OnTriggerEnter(Collider other)
+    {
+        // Check if the collider that entered the trigger is the button collider
+        if (other == buttonCollider)
+        {
+            StartPuzzle();
+        }
+    }
 
-//     private void HandleButtonDown(HVRPhysicsButton pressedButton)
-//     {
-//         // Enable the Rigidbody when the button is pressed.
-//         if (targetRigidbody != null)
-//         {
-//             targetRigidbody.isKinematic = false; // if you want to enable physics interactions
-//             targetRigidbody.useGravity = true; // if you want gravity to affect the Rigidbody
-//         }
-//     }
-// }
+    private void StartPuzzle()
+    {
+        // Enable the Rigidbody, allowing the ball to move
+        if (ballRigidbody != null)
+        {
+            ballRigidbody.isKinematic = false;
+        }
+    }
+}

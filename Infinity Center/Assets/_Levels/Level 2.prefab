@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 7400914188547579955}
   - component: {fileID: 4579704790551131615}
   - component: {fileID: 7794817655931216789}
+  - component: {fileID: 7435105976992503435}
   m_Layer: 0
   m_Name: Level 2
-  m_TagString: Untagged
+  m_TagString: ballTag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -110,6 +111,18 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 43729162026149894, guid: 78f6625a42a36ff4d838272623ac5071, type: 2}
+--- !u!114 &7435105976992503435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8409319937577865235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e7d15911fbf5ff44ba20a654ff9212d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3608319196798305764
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -187,6 +200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e83c0ae1b41ae884abfe4f4a463220fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttonCollider: {fileID: 0}
 --- !u!4 &6926833545229135309 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5922899100147558441, guid: 220385c4cc28cb94c984878098e4856b, type: 3}

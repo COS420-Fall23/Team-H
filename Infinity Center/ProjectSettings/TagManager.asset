@@ -8,6 +8,7 @@ TagManager:
   - NoCollisionOnSame
   - Bullet
   - TaskItem
+  - ballTag
   layers:
   - Default
   - TransparentFX

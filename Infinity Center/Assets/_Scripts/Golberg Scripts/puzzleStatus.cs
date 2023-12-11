@@ -88,6 +88,13 @@ public class PuzzleStatus : MonoBehaviour
         }
     }
 
+    // New method to reset puzzle objects when switching levels
+    public void ResetPuzzleObjects()
+    {
+        puzzleObjects.Clear();
+        savedTransforms.Clear();
+    }
+
     private struct TransformData
     {
         public Vector3 Position;

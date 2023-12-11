@@ -145,6 +145,7 @@ GameObject:
   - component: {fileID: 4110740126163299353}
   - component: {fileID: 4605722778485351042}
   - component: {fileID: 6529810778216901536}
+  - component: {fileID: 6735065772304248534}
   m_Layer: 0
   m_Name: IntroLevel
   m_TagString: Untagged
@@ -243,6 +244,18 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 43729162026149894, guid: 78f6625a42a36ff4d838272623ac5071, type: 2}
+--- !u!114 &6735065772304248534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2219080509653641708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e7d15911fbf5ff44ba20a654ff9212d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2405985673257195956
 GameObject:
   m_ObjectHideFlags: 0
@@ -255,7 +268,7 @@ GameObject:
   - component: {fileID: 8553671510955161776}
   m_Layer: 0
   m_Name: GrabbableSphere
-  m_TagString: Untagged
+  m_TagString: ballTag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -644,6 +657,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StartButton (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4962751286462834474, guid: 4ca16f96f1dd86e46845acb674149d4f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8400994542640088916, guid: 4ca16f96f1dd86e46845acb674149d4f, type: 3}
       propertyPath: ButtonDown.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
@@ -737,6 +754,10 @@ PrefabInstance:
     - target: {fileID: 1416573824544237446, guid: 08bef0508d512de408095a8cc84cdc10, type: 3}
       propertyPath: m_Name
       value: GrabbableSphere
+      objectReference: {fileID: 0}
+    - target: {fileID: 1416573824544237446, guid: 08bef0508d512de408095a8cc84cdc10, type: 3}
+      propertyPath: m_TagString
+      value: ballTag
       objectReference: {fileID: 0}
     - target: {fileID: 8545253147668792323, guid: 08bef0508d512de408095a8cc84cdc10, type: 3}
       propertyPath: m_LocalPosition.x

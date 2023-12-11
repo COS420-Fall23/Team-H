@@ -86,7 +86,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7696762018270369077, guid: 395301e5aa977494aa9b48807f4ba2da, type: 3}
       propertyPath: m_Name
-      value: GrabbableCube Variant
+      value: GrabbableCube_Socketable
+      objectReference: {fileID: 0}
+    - target: {fileID: 7696762018270369077, guid: 395301e5aa977494aa9b48807f4ba2da, type: 3}
+      propertyPath: m_TagString
+      value: socketable_block
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

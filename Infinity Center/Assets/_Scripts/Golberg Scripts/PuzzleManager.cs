@@ -5,7 +5,7 @@ public class PuzzleManager : MonoBehaviour
     [SerializeField] private PuzzleStatus puzzleStatus;
     [SerializeField] private GameObject[] levelPrefabs; // Array of level prefabs
 
-    private int currentLevelIndex = 0;
+    public int currentLevelIndex = 0;
     private GameObject currentLevelInstance;
 
     private void Start()

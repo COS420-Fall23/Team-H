@@ -8,14 +8,14 @@ public class PuzzleStart : MonoBehaviour
     private void Start()
     {
         // Find the ball using the tag and get its Rigidbody
-        GameObject ballObject = GameObject.FindGameObjectWithTag("ballTag");
+        GameObject ballObject = GameObject.FindGameObjectWithTag("TaskItem");
         if (ballObject != null)
         {
             ballRigidbody = ballObject.GetComponent<Rigidbody>();
         }
         else
         {
-            Debug.LogError("Ball with tag 'ballTag' not found in the scene.");
+            Debug.LogError("Ball with tag 'TaskItem' not found in the scene.");
         }
 
         // Ensure the Rigidbody is initially disabled

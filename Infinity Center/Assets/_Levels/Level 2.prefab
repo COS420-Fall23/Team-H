@@ -131,6 +131,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6966865944258959094}
     m_Modifications:
+    - target: {fileID: 3803067911904253772, guid: 220385c4cc28cb94c984878098e4856b, type: 3}
+      propertyPath: m_TagString
+      value: TaskItem
+      objectReference: {fileID: 0}
     - target: {fileID: 5922899100147558441, guid: 220385c4cc28cb94c984878098e4856b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.069000006
@@ -171,9 +175,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7620766964387902810, guid: 220385c4cc28cb94c984878098e4856b, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8465232309509558080, guid: 220385c4cc28cb94c984878098e4856b, type: 3}
       propertyPath: m_Name
       value: GrabbableSphere (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8465232309509558080, guid: 220385c4cc28cb94c984878098e4856b, type: 3}
+      propertyPath: m_TagString
+      value: TaskItem
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

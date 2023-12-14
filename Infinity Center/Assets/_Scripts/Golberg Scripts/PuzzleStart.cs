@@ -1,11 +1,16 @@
+using System.Collections;
+using System.Collections.Generic;
+using HurricaneVR.Framework.Core.ScriptableObjects;
+using HurricaneVR.Framework.Core.Utils;
+using HurricaneVR.Framework.Shared;
 using UnityEngine;
 
 public class PuzzleStart : MonoBehaviour
 {
-    [SerializeField] private Collider buttonCollider; // Assign the mesh collider of the button
-    private Rigidbody ballRigidbody; // The Rigidbody of the ball, found by tag
+    [SerializeField] public Collider buttonCollider; // Assign the mesh collider of the button
+    public Rigidbody ballRigidbody; // The Rigidbody of the ball, found by tag
 
-    private void Start()
+    public void Start()
     {
         // Find the ball using the tag and get its Rigidbody
         GameObject ballObject = GameObject.FindGameObjectWithTag("TaskItem");
@@ -29,7 +34,7 @@ public class PuzzleStart : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    public void OnTriggerEnter(Collider other)
     {
         // Check if the collider that entered the trigger is the button collider
         if (other == buttonCollider)
@@ -38,7 +43,7 @@ public class PuzzleStart : MonoBehaviour
         }
     }
 
-    private void StartPuzzle()
+    public void StartPuzzle()
     {
         // Enable the Rigidbody, allowing the ball to move
         if (ballRigidbody != null)

@@ -49,6 +49,4 @@ public class PuzzleManager : MonoBehaviour
     {
         LoadLevel(currentLevelIndex);
     }
-
-    // Implement methods to handle level completion, failures, etc.
 }

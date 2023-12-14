@@ -8,6 +8,8 @@ TagManager:
   - NoCollisionOnSame
   - Bullet
   - TaskItem
+  - ballTag
+  - socketable_block
   layers:
   - Default
   - TransparentFX

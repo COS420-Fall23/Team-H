@@ -10,7 +10,7 @@ public class LogInMenuBehavior : MonoBehaviour
 {
 
     #region | Variables |
-
+    
     [SerializeField] private GameObject _credentialPrompt;
     [SerializeField] private GameObject _rolePrompt;
     [SerializeField] private GameObject _mainMenu;

@@ -20,12 +20,10 @@ public class TutorialUIGuideBehavior : MonoBehaviour
     
     // ## Events
     public event Action activateNextTask;
-    public event Action pausePlayerMovement;
 
     [Header("Debugging")] 
     [SerializeField] private bool _enableDebugLogs;
     [SerializeField] private Transform[] _menuTransforms;
-    
 
     #endregion
 

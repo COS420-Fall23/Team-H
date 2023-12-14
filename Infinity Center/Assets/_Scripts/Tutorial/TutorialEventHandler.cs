@@ -74,11 +74,6 @@ public class TutorialEventHandler : MonoBehaviour
         _tutorialUI.activateNextTask += OnActivateNextTask;
     }
 
-    private void Start()
-    {
-        
-    }
-
     #endregion
 
     #region | Custom Methods |
@@ -90,7 +85,6 @@ public class TutorialEventHandler : MonoBehaviour
         _playerController.RunSpeed = 0;
         _playerController.CanJump = false;
         _playerController.CanCrouch = false;
-        
     }
 
     private void OnEnterMarker(TaskHighlighterBehavior taskHighlighterBehavior, float particalDuration)

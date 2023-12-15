@@ -1903,6 +1903,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Buildings_Floor_5x5_01P
       objectReference: {fileID: 0}
+    - target: {fileID: 1000599048822866, guid: 5171d5eb12e0f184a8761aa4157f7d00, type: 3}
+      propertyPath: m_TagString
+      value: Respawn
+      objectReference: {fileID: 0}
     - target: {fileID: 4874802182062810, guid: 5171d5eb12e0f184a8761aa4157f7d00, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -2291,10 +2295,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1423733101161993385, guid: c7068abb5a2385b48848007adf44e53a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.082
+      objectReference: {fileID: 0}
+    - target: {fileID: 3986830897016045704, guid: c7068abb5a2385b48848007adf44e53a, type: 3}
+      propertyPath: PoseTag
+      value: CubeSocket
+      objectReference: {fileID: 0}
     - target: {fileID: 3986830897016045704, guid: c7068abb5a2385b48848007adf44e53a, type: 3}
       propertyPath: AutoSpawnPrefab
       value: 
       objectReference: {fileID: 8360372395194124874, guid: a03f3db6dc0596a42bb08bcbae6652f3, type: 3}
+    - target: {fileID: 4327184796755452127, guid: c7068abb5a2385b48848007adf44e53a, type: 3}
+      propertyPath: Tags.Tags
+      value: 
+      objectReference: {fileID: 11400000, guid: bdace14f4b9ee5a4abadd6bb4ea503d2, type: 2}
+    - target: {fileID: 4327184796755452127, guid: c7068abb5a2385b48848007adf44e53a, type: 3}
+      propertyPath: Tags._data
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4363026382443309168, guid: c7068abb5a2385b48848007adf44e53a, type: 3}
+      propertyPath: PoseTag
+      value: RectangleSocket
+      objectReference: {fileID: 0}
     - target: {fileID: 4363026382443309168, guid: c7068abb5a2385b48848007adf44e53a, type: 3}
       propertyPath: AutoSpawnPrefab
       value: 
@@ -2342,6 +2366,14 @@ PrefabInstance:
     - target: {fileID: 4628135155436188393, guid: c7068abb5a2385b48848007adf44e53a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7006553877689730186, guid: c7068abb5a2385b48848007adf44e53a, type: 3}
+      propertyPath: Tags.Tags
+      value: 
+      objectReference: {fileID: 11400000, guid: bdace14f4b9ee5a4abadd6bb4ea503d2, type: 2}
+    - target: {fileID: 7006553877689730186, guid: c7068abb5a2385b48848007adf44e53a, type: 3}
+      propertyPath: Tags._data
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3008,11 +3040,19 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3748336345787935784, guid: 4476bd982f50f09458b7419878a9829c, type: 3}
+      propertyPath: ButtonDown.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3748336345787935784, guid: 4476bd982f50f09458b7419878a9829c, type: 3}
       propertyPath: ButtonUp.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3748336345787935784, guid: 4476bd982f50f09458b7419878a9829c, type: 3}
       propertyPath: ButtonDown.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3748336345787935784, guid: 4476bd982f50f09458b7419878a9829c, type: 3}
+      propertyPath: ButtonDown.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3748336345787935784, guid: 4476bd982f50f09458b7419878a9829c, type: 3}
@@ -3024,6 +3064,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1286519006}
     - target: {fileID: 3748336345787935784, guid: 4476bd982f50f09458b7419878a9829c, type: 3}
+      propertyPath: ButtonDown.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1286519007}
+    - target: {fileID: 3748336345787935784, guid: 4476bd982f50f09458b7419878a9829c, type: 3}
       propertyPath: ButtonUp.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
@@ -3032,16 +3076,32 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3748336345787935784, guid: 4476bd982f50f09458b7419878a9829c, type: 3}
+      propertyPath: ButtonDown.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3748336345787935784, guid: 4476bd982f50f09458b7419878a9829c, type: 3}
       propertyPath: ButtonDown.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: StartPuzzle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3748336345787935784, guid: 4476bd982f50f09458b7419878a9829c, type: 3}
+      propertyPath: ButtonDown.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: RetryCurrentLevel
       objectReference: {fileID: 0}
     - target: {fileID: 3748336345787935784, guid: 4476bd982f50f09458b7419878a9829c, type: 3}
       propertyPath: ButtonDown.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: PuzzleStart, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3748336345787935784, guid: 4476bd982f50f09458b7419878a9829c, type: 3}
+      propertyPath: ButtonDown.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: PuzzleManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3748336345787935784, guid: 4476bd982f50f09458b7419878a9829c, type: 3}
       propertyPath: ButtonDown.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: StartPuzzle()
+      objectReference: {fileID: 0}
+    - target: {fileID: 3748336345787935784, guid: 4476bd982f50f09458b7419878a9829c, type: 3}
+      propertyPath: ButtonDown.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4438207163740356579, guid: 4476bd982f50f09458b7419878a9829c, type: 3}
       propertyPath: m_IsKinematic

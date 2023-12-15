@@ -21,7 +21,9 @@ public class floorReset : MonoBehaviour
     {
         if (other.gameObject.tag == "Respawn")
         {
+            Rigidbody rb = gameObject.GetComponent<Rigidbody>();
             gameObject.transform.position = startingLocation;
+            rb.velocity = new Vector3(0, 0, 0);
         }
 
     }

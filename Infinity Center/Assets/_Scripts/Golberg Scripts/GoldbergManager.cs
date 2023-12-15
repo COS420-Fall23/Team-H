@@ -20,13 +20,13 @@ public class GoldbergManager : MonoBehaviour
     [SerializeField] private GameObject _welcomeScreen;
     [SerializeField] private GameObject _congratsScreen;
     
-    private int _curLevelIndex = 0;
 
     private event Action startLevel;
     private event Action resetLevel;
     private event Action allLevelsCompleted; 
 
     [Header("Debugging")]
+    [SerializeField] private int _curLevelIndex = 0;
     [SerializeField] private List<CreatableItemBehavior> _createdItems;
     [SerializeField] private PuzzleStates _curPuzzleState;
     #endregion
@@ -120,7 +120,7 @@ public class GoldbergManager : MonoBehaviour
         
         // Iterate To Next
         _curLevelIndex++;
-        if (_curLevelIndex <= _levelPrefabs.Length)
+        if (_curLevelIndex < _levelPrefabs.Length)
         {
             ReadyCurrentLevel();
         }
@@ -134,7 +134,6 @@ public class GoldbergManager : MonoBehaviour
     {
         _welcomeScreen.SetActive(false);
         _congratsScreen.SetActive(true);
-       
     }
 
     private void OnTriggerEnter(Collider other)

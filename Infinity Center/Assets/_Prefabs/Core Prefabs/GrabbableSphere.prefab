@@ -58,9 +58,10 @@ GameObject:
   - component: {fileID: 4909058553769866895}
   - component: {fileID: 2049285056783969514}
   - component: {fileID: 769423381236869737}
+  - component: {fileID: 4965204186975804314}
   m_Layer: 0
   m_Name: Sphere
-  m_TagString: Untagged
+  m_TagString: TaskItem
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -178,6 +179,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &4965204186975804314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3803067911904253772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f09e8bd1de2adb4e8f532b3f892be6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5861304454648682415
 GameObject:
   m_ObjectHideFlags: 0
@@ -307,7 +320,7 @@ GameObject:
   - component: {fileID: 7620766964387902810}
   m_Layer: 0
   m_Name: GrabbableSphere
-  m_TagString: Untagged
+  m_TagString: TaskItem
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

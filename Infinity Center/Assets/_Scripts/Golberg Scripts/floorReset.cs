@@ -19,9 +19,9 @@ public class floorReset : MonoBehaviour
 
     void OnCollisionEnter(Collision other)
     {
-        if (other.GameObject.tag == "Respawn")
+        if (other.gameObject.tag == "Respawn")
         {
-            gameObject.transform(startingLocation);
+            gameObject.transform.position = startingLocation;
         }
 
     }

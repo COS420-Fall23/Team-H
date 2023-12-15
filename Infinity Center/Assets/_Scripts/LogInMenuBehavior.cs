@@ -81,7 +81,7 @@ public class LogInMenuBehavior : MonoBehaviour
 
     public void StartExhibit()
     {
-        _txtExhibitComingSoon.SetActive(true);
+        SceneManager.LoadScene("GoldbergLab");
     }
 
     public void StartTutorial()

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Unity.Mathematics;
+using UnityEngine.Serialization;
 
 public class VelocityArrow : MonoBehaviour
 {
@@ -10,9 +11,8 @@ public class VelocityArrow : MonoBehaviour
 
     private GameObject _parentObj;
     private Rigidbody _parentRigidbody;
-    private GameObject _arrowInstance;
 
-    [SerializeField] private GameObject _momentumArrowPrefab;
+    [SerializeField] private GameObject _velocityArrowMesh;
     [SerializeField] private float _velocityDeadZone;
 
     #endregion
@@ -24,8 +24,6 @@ public class VelocityArrow : MonoBehaviour
         Transform parentTransform = GetComponentInParent<Transform>();
         _parentObj = parentTransform.gameObject;
         _parentRigidbody = _parentObj.GetComponent<Rigidbody>();
-        _arrowInstance = Instantiate(_momentumArrowPrefab, parentTransform.position, _parentObj.transform.rotation, parentTransform);
-        _arrowInstance.SetActive(false);
     }
 
     private void FixedUpdate()
@@ -34,7 +32,7 @@ public class VelocityArrow : MonoBehaviour
         {
             DrawMomentumArrow();
         }
-        else if (_arrowInstance.activeSelf) _arrowInstance.SetActive(false);
+        else if (_velocityArrowMesh.activeSelf) _velocityArrowMesh.SetActive(false);
     }
 
     #endregion
@@ -58,8 +56,8 @@ public class VelocityArrow : MonoBehaviour
 
     private void DrawMomentumArrow()
     {
-            if(!_arrowInstance.activeSelf) _arrowInstance.SetActive(true);
-            _arrowInstance.transform.rotation = Quaternion.LookRotation(_parentRigidbody.velocity);
+            if(!_velocityArrowMesh.activeSelf) _velocityArrowMesh.SetActive(true);
+            _velocityArrowMesh.transform.rotation = Quaternion.LookRotation(_parentRigidbody.velocity);
     }
     
     #endregion
